@@ -1,0 +1,46 @@
+/*Global selection*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: x-large;
+}
+
+p {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  padding: 20px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #9aa313;
+  color: white;
+  text-align: center;
+}
+
+/* Class selection*/
+.about-selection {
+  padding: 50px;
+  text-align: center;
+  background-color: #05a381;
+  color: white;
+}
+
+.goals-selection {
+  padding: 50px;
+  text-align: center;
+  background-color: #a32a00;
+  color: white;
+}
