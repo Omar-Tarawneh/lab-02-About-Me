@@ -100,4 +100,6 @@ function fifthQuestion(){
 }
 fifthQuestion();
 
-
+// user welcoming by their name
+var userName = prompt('So can you tell me your name please?');
+alert('Hello and welcome ' + userName + ' to my web page here is some stuff about me');
