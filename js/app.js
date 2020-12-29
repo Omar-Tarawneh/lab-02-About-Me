@@ -146,6 +146,7 @@ function questionNumSix(){
       // console.log('That\'s Correct');
       alert('That\'s Correct');
       userScore += 1;
+      break;
     }
   }
   // console.log(correctAns);
