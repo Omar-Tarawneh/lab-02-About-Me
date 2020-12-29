@@ -18,6 +18,7 @@ ul {
 
 li {
   padding: 20px;
+  text-align: left;
 }
 
 footer {
@@ -28,6 +29,9 @@ footer {
   background-color: #9aa313;
   color: white;
   text-align: center;
+}
+ol {
+  list-style: decimal;
 }
 
 /* Class selection*/
@@ -42,5 +46,26 @@ footer {
   padding: 50px;
   text-align: center;
   background-color: #a32a00;
+  color: white;
+}
+
+.edu-selection {
+  padding: 50px;
+  text-align: center;
+  background-color: #05a332;
+  color: white;
+}
+
+.exp-selection {
+  padding: 50px;
+  text-align: center;
+  background-color: #a38105;
+  color: white;
+}
+
+.top-ten-selection {
+  padding: 50px;
+  text-align: center;
+  background-color: #013026;
   color: white;
 }
