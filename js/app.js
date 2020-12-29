@@ -1,7 +1,7 @@
 'use strict';
 
 // LAB-03 instruction Check list
-// [] Modify README
+// [x] Modify README
 // [x] Top Ten <ol>
 // [x] exp. edu. <ul>
 /* 6th Question
