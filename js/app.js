@@ -19,115 +19,39 @@
 // [x] add some style
 // [x] use console.log to keep track of questions
 
-/*[] Stretch Goals
-    [] but the question and answers and loop through them
+/* Stretch Goals
+    [x] but the question and answers and loop through them
     [] generate a random numbers as your correct answer
 */
-
-// Welcome Message
-alert('Welcome to About Me page, lets take quiz to see if you can guess who am I');
-
-// First Question
-function firstQuestion(){
-  var gender = prompt('Am I a Male or Female? (y/n or yes/no)');
-  // Make sure the answer is lower case
-  gender = gender.toLowerCase();
-  if (gender === 'yes' || gender === 'y'){
-    //console.log('yes you are correct');
-    alert('yes you are correct');
-  }else if (gender === 'no' || gender === 'n'){
-    //console.log('NO, I\'m a Male actually');
-    alert('NO, I\'m a Male actually');
-  }else {
-    //console.log('Please answer with y/n or yes/no');
-    alert('Please answer with y/n or yes/no');
-    firstQuestion();
-  }
-}
-firstQuestion();
-
-
-// Second Question
-function secondQuestion(){
-  var countryRegion = prompt('Am I from South of Jordan? (y/n or yes/no)');
-  // Make sure the answer is lower case
-  countryRegion = countryRegion.toLowerCase();
-  if (countryRegion === 'yes' || countryRegion === 'y'){
-    // console.log('Yes, I\'m from south of Jordan');
-    alert('Yes, I\'m from south of Jordan');
-  }else if (countryRegion === 'no' || countryRegion === 'n'){
-    //console.log('NO, I\'m from the South actully');
-    alert('NO, I\'m from the South actully');
-  }else {
-    //console.log('Please answer with y/n or yes/no');
-    alert('Please answer with y/n or yes/no');
-    secondQuestion();
-  }
-}
-secondQuestion();
-
-// Third Question
-function thirdQuestion(){
-  var city = prompt('Am I from Al-Karak city? (y/n or yes/no)');
-  // Make sure the answer is lower case
-  city = city.toLowerCase();
-  if (city === 'yes' || city === 'y'){
-    // console.log('Yes, I\'m from Al-Karak city');
-    alert('Yes, I\'m from Al-Karak city');
-  }else if (city === 'no' || city === 'n'){
-    // console.log('NO, I\'m from Al-Karak actully');
-    alert('NO, I\'m from Al-Karak actully');
-  }else {
-    // console.log('Please answer with y/n or yes/no');
-    alert('Please answer with y/n or yes/no');
-    thirdQuestion();
-  }
-}
-thirdQuestion();
-
-// Fourth Question
-function fourthQuestion(){
-  var bachelorDegree = prompt('Do I have a Bachelor Degree in Chemistry? (y/n or yes/no)');
-  // Make sure the answer is lower case
-  bachelorDegree = bachelorDegree.toLowerCase();
-  if (bachelorDegree === 'yes' || bachelorDegree === 'y'){
-    // console.log('Yes, Great');
-    alert('yes, Great');
-  }else if (bachelorDegree === 'no' || bachelorDegree === 'n'){
-    // console.log('Actually I have a bachelor Degree in Chemistry');
-    alert('Actually I have a bachelor Degree in Chemistry');
-  }else {
-    // console.log('Please answer with y/n or yes/no');
-    alert('Please answer with y/n or yes/no');
-    fourthQuestion();
-  }
-}
-fourthQuestion();
-
-
-// Fifth Question
-function fifthQuestion(){
-  var myName = prompt('Do you think my name is Omar Tarawneh? (y/n or yes/no)');
-  myName = myName.toLowerCase();
-
-  if (myName === 'yes' || myName === 'y'){
-    // console.log('Yes, you guess it right my Name is Omar');
-    alert('Yes, you guess it right my Name is Omar');
-  }else if (myName === 'no' || myName === 'n'){
-    // console.log('Actually My Name is Omar Tarawneh');
-    alert('Actually My Name is Omar Tarawneh');
-  }else {
-    // console.log('Please answer with y/n or yes/no');
-    alert('Please answer with y/n or yes/no');
-    fifthQuestion();
-  }
-}
-fifthQuestion();
 
 // user welcoming by their name
 var userName = prompt('So can you tell me your name please?');
 alert('Hello and welcome ' + userName + ' to my web page here is some stuff about me');
 
+function aboutMeQuiz(){
+  var userScore = 0;
+  var questionArray =['Am I a Male? (y/n or yes/no)',
+    'Am I from North of Jordan? (y/n or yes/no)',
+    'Am I from Al-Karak city? (y/n or yes/no)',
+    'Do I have a Bachelor Degree in Chemistry? (y/n or yes/no)',
+    'Do you think my name is Omar Tarawneh? (y/n or yes/no)'
+  ];
+  var questionAns1 = ['yes', 'no', 'yes', 'yes', 'yes'];
+  var questionAns2 = ['y', 'n', 'y', 'y', 'y'];
+  // loob through the question and the answers
+  for(let i = 0; i < questionArray.length; i++){
+    var userAns = prompt(questionArray[i]).toLowerCase();
+    if(userAns === questionAns1[i] || userAns === questionAns2[i]){
+      // console.log('Correct');
+      alert('Correct');
+      userScore += 1;
+    }else {
+      // console.log('No, you are not Correct.');
+      alert('No, you are not Correct.');
+    }
+  }
+  return userScore;
+}
 
 
 
@@ -167,7 +91,11 @@ function questionNumSeven(){
         // console.log('That is Correct');
         alert('That is Correct');
         userScore += 1;
+        break;
       }
+    }
+    if (userScore >= 1){
+      break;
     }
   }
   // console.log(correctAns);
@@ -175,27 +103,5 @@ function questionNumSeven(){
   return userScore;
 }
 // console.log(questionNumSix() + questionNumSeven());
-alert('you final score is: ' + (questionNumSix() + questionNumSeven()));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+alert('you final score is: ' + (aboutMeQuiz() + questionNumSix() + questionNumSeven()));
 
