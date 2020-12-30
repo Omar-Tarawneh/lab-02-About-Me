@@ -16,3 +16,8 @@ For lab-03 I have Added a number-guessing Game Please Check It out
 
 - The hole process of making the code was easy but took me a lot of time
 - The Quiz will repeat himself until you answer the question in the right way by answer with yes or no
+
+**Navigator**: Omar
+**Driver**: Areej
+- Modify While in Quze;
+- The function instruction are all done;

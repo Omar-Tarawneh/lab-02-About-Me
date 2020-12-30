@@ -38,7 +38,7 @@ function aboutMeQuiz() {
   // loob through the question and the answers
   for (let i = 0; i < questionArray.length; i++) {
     var userAns = prompt(questionArray[i]).toLowerCase();
-    while(userAns !== 'yes' || userAns !== 'no' || userAns !== 'y' || userAns !== 'n'){
+    while(userAns !== 'yes' && userAns !== 'no' && userAns !== 'y' && userAns !== 'n'){
       userAns = prompt(questionArray[i]).toLowerCase();
     }
       if (userAns === questionAns1[i] || userAns === questionAns2[i]) {
