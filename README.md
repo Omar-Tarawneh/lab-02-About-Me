@@ -20,4 +20,6 @@ For lab-03 I have Added a number-guessing Game Please Check It out
 **Navigator**: Omar
 **Driver**: Areej
 - Modify While in Quze;
+- insert img to the HTML;
+- Add margin-top to the img
 - The function instruction are all done;
