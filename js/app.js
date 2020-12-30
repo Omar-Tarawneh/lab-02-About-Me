@@ -94,6 +94,7 @@ function questionNumSeven(){
         break;
       }
     }
+    // To break the outer loob
     if (userScore >= 1){
       break;
     }
@@ -103,5 +104,4 @@ function questionNumSeven(){
   return userScore;
 }
 // console.log(questionNumSix() + questionNumSeven());
-alert('you final score is: ' + (aboutMeQuiz() + questionNumSix() + questionNumSeven()));
-
+alert('you final score is: ' + (aboutMeQuiz() + questionNumSix() + questionNumSeven()) + ' out of 7');
