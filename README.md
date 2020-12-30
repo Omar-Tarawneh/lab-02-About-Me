@@ -1,4 +1,4 @@
-# LAB - Number
+# LAB - 02
 
 ## About Me
 
