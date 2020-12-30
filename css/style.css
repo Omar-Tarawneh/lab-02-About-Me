@@ -21,6 +21,10 @@ li {
   text-align: left;
 }
 
+img {
+  margin-top: 20px;
+}
+
 footer {
   position: fixed;
   left: 0;

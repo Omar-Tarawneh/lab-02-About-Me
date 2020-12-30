@@ -38,14 +38,18 @@ function aboutMeQuiz() {
   // loob through the question and the answers
   for (let i = 0; i < questionArray.length; i++) {
     var userAns = prompt(questionArray[i]).toLowerCase();
-    if (userAns === questionAns1[i] || userAns === questionAns2[i]) {
-      // console.log('Correct');
-      alert('Correct');
-      userScore += 1;
-    } else {
-      // console.log('No, you are not Correct.');
-      alert('No, you are not Correct.');
+    while(userAns !== 'yes' && userAns !== 'no' && userAns !== 'y' && userAns !== 'n'){
+      userAns = prompt(questionArray[i]).toLowerCase();
     }
+      if (userAns === questionAns1[i] || userAns === questionAns2[i]) {
+        // console.log('Correct');
+        alert('Correct');
+        userScore += 1;
+      }
+       else {
+        // console.log('No, you are not Correct.');
+        alert('No, you are not Correct.');
+      }
   }
   return userScore;
 }
